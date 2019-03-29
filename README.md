@@ -4,7 +4,7 @@ Configured AWS credentials, Python libraries **boto3, paho-mqtt, aws-cli**
 
 #### Create a DynamoDB table:
 * Run *create_table.py* 
-* The table in the example script only has a hash key. Add range key if necessary. Read the section under `Primary key` [here] (https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html)
+* The table in the example script only has a hash key. Add range key if necessary. Read the section under `Primary key` [here](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html)
 
 #### Create an IoT Core thing:
 * Go to IoT core from the AWS Console
