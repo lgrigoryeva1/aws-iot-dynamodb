@@ -13,7 +13,7 @@ Configured AWS credentials, Python libraries **boto3, paho-mqtt, aws-cli**
 * Download and store certificate paths to *credentials.py* (including root CA) 
 
 #### Edit the paths to certificate files in credentials.py and add an endpoint 
-To find your endpoint, go to IoT Core -> Settings ->Endpoint
+To find your endpoint, go to IoT Core -> `Settings` -> `Endpoint`
 
 #### Give access to DynamoDB in the policies section of your IoT thing:
 * Go to IoT core -> Secure -> Policies
