@@ -8,8 +8,8 @@ Configured AWS credentials, Python libraries **boto3, paho-mqtt, aws-cli**
 
 #### Create an IoT Core thing:
 * Go to IoT core from the AWS Console
-* Give it any name, e.g. iotmarine, no need to fill other info
-* Add a certificate: 'One-click certificate creation'
+* Give it any name, e.g. test-thing, no need to fill other info
+* Add a certificate: `One-click certificate creation`
 * Download and store certificate paths to *credentials.py* (including root CA) 
 
 #### Edit the paths to certificate files in credentials.py and add an endpoint 
@@ -21,11 +21,11 @@ To find your endpoint, go to IoT Core -> Settings ->Endpoint
 * Copy paste from *policy.txt* (delete what is there already)
 
 #### Create a rule for storing messages in DynamoDB:
-* 'AWS IoT' -> 'Act' -> 'Create'
+* `AWS IoT` -> `Act` -> `Create`
 * Name: Name for the rule, e.g. IoTtoDynamo
 * Description: e.g. Rule for sending IoT data to Dynamo
-* Query statement: SELECT * FROM '#'
-* Add action: choose "Split message into multiple columns of a DynamoDB table (DynamoDBv2)", -> 'Configure action'
+* Query statement: `SELECT * FROM '#'`
+* Add action: choose `Split message into multiple columns of a DynamoDB table (DynamoDBv2)`, -> `Configure action`
 * Choose a resource: Choose the table created earlier
 
 #### Publish messages:
